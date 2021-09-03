@@ -1,0 +1,15 @@
+---
+
+- name: Installation php
+  become: yes
+  apt:
+    name: 
+      - php7.4
+      - php7.4-fpm
+    state : present
+
+- name: demarrer service
+  service:
+   name: php7.4-fpm
+   state: started
+   enabled: true

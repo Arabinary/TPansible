@@ -1,0 +1,6 @@
+---
+- name: "Ce playbook installe LAMP et Wordpress"
+  hosts: debian
+  roles:
+    - role: Wordpress
+      
